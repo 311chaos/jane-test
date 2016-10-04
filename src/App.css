@@ -1,3 +1,35 @@
 .App {
   text-align: center;
 }
+
+.nav {
+  padding-top: 20px;
+  background-color: #fff;
+}
+
+.brand img {
+  height: 30px;
+}
+
+li.brand a {
+  padding: 5px 15px;
+}
+
+.nav li.active a {
+  color: #333;
+}
+
+.nav li a {
+  color: #666;
+}
+
+.content {
+  background-color: #f6f6f6;
+}
+
+.footer {
+  background-color: #fff;
+  line-height: 60px;
+  font-size: 16px;
+  font-weight: 200;
+}

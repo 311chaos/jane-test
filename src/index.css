@@ -1,5 +1,8 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 0 0 70px 0;
   font-family: sans-serif;
+}
+body {
+  background-color: #f6f6f6 !important;
 }

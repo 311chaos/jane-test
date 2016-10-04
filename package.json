@@ -6,15 +6,19 @@
     "react-scripts": "0.6.1"
   },
   "dependencies": {
+    "bootstrap": "^3.3.7",
     "react": "^15.3.2",
+    "react-bootstrap": "^0.30.5",
     "react-dom": "^15.3.2",
     "react-redux": "^4.4.5",
+    "react-router": "^2.8.1",
     "redux": "^3.6.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build; cd ./build; surge --domain 'jane-test.surge.sh'; cd ../;"
   }
 }

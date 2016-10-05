@@ -4,15 +4,11 @@ import logo from './logo.svg';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import { LinkContainer, IndexLinkContainer } from 'react-router-bootstrap';
 
-const handleSelected = (selectedKey) => {
-  // alert(`Selected ${selectedKey}`)
-};
-
 class App extends Component {
   render() {
     return (
       <div>
-        <Nav bsStyle="tabs" onSelect={handleSelected}>
+        <Nav bsStyle="tabs">
           <NavItem disabled className="brand">
             <img src={logo} alt="logo"/>
           </NavItem>
@@ -27,7 +23,7 @@ class App extends Component {
             </NavItem>
           </LinkContainer>
         </Nav>
-        <div className="content">
+        <div className="content container">
           {this.props.children}
         </div>
         <Navbar fluid fixedBottom className="footer">
@@ -35,9 +31,7 @@ class App extends Component {
             Aaron Hickman
           </div>
         </Navbar>
-
       </div>
-
     );
   }
 }

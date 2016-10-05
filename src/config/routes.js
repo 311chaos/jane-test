@@ -1,17 +1,16 @@
 import React from 'react';
-import { Route, Router, IndexRedirect, hashHistory } from 'react-router';
+import { Route, Router, IndexRedirect, browserHistory } from 'react-router';
 
 import App from '../App';
-import Edit from '../components/Edit';
+import EditView from '../components/EditView';
 import View from '../components/View';
 
 const routes = (
-  <Router history={hashHistory}>
+  <Router history={browserHistory}>
     <Route path="/" component={App}>
       <IndexRedirect to="/view" />
       <Route path="view" component={View} />
-      <Route path="edit" component={Edit} />
-
+      <Route path="edit" component={EditView} />
     </Route>
   </Router>
 );

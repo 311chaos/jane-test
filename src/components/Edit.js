@@ -7,7 +7,7 @@ class EditView extends Component {
     return (
       <div>
         <h3>Enter a type of item to watch:</h3>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} autoComplete="off">
           <Field name="item" component="input" type="text" placeholder="Enter to Submit" />
         </form>
       </div>

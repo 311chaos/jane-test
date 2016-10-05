@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import Edit from './Edit'
+import Edit from '../containers/Edit'
 
 class EditView extends Component {
   render() {
     return (
       <div>
-        <Edit onSubmit={() => {console.log('HERE')}}/>
+        <Edit/>
       </div>
     );
   }

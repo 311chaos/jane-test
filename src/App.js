@@ -3,6 +3,7 @@ import './App.css';
 import logo from './logo.svg';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import { LinkContainer, IndexLinkContainer } from 'react-router-bootstrap';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 class App extends Component {
   render() {
@@ -24,7 +25,17 @@ class App extends Component {
           </LinkContainer>
         </Nav>
         <div className="content container">
-          {this.props.children}
+          <ReactCSSTransitionGroup
+            component="div"
+            transitionName="page"
+            className="transition-group"
+            transitionEnterTimeout={300}
+            transitionLeaveTimeout={600}
+          >
+            {React.cloneElement(this.props.children, {
+              key: this.props.location.pathname
+            })}
+          </ReactCSSTransitionGroup>
         </div>
         <Navbar fluid fixedBottom className="footer">
           <div>

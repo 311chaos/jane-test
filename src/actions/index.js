@@ -1,12 +1,15 @@
+import actionTypes from '../actions/actionTypes';
 
-
-export const deleteWatchedItem = (text) => {
-
+export const removeWatchedItem = (text) => {
+  return {
+    type: actionTypes.watchItemRemove,
+    value: text.item
+  }
 };
 
 export const addWatchedItem = (text) => {
   return {
-    type: 'ADD',
+    type: actionTypes.watchItemAdd,
     value: text.item
   }
 };

@@ -6,7 +6,7 @@ const watchItems = (state=[], action) => {
       if(!_.find(state, { value: action.value })) {
         return state.concat([{value: action.value}]);
       }
-      return [];
+      return state;
     case 'REMOVE':
       return _.filter(state, tag => {
         return tag.value !== action.value;

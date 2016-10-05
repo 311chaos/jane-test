@@ -1,7 +1,6 @@
 import { connect } from 'react-redux';
 import { addWatchedItem } from '../actions'
-import EditView  from '../components/Edit';
-
+import EditComp  from '../components/Edit';
 const mapStateToProps = (state, ownProps) => {
   return {
     item: ownProps.item
@@ -16,10 +15,10 @@ const mapDispatchToProps = (dispatch, ownProps) => {
   }
 };
 
-const wrappedEditView = connect(
+const wrappedEditContainer = connect(
   mapStateToProps,
   mapDispatchToProps
-)(EditView);
+)(EditComp);
 
-export default wrappedEditView;
+export default wrappedEditContainer;
 

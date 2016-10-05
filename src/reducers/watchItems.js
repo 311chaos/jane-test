@@ -1,5 +1,4 @@
 import _ from 'lodash';
-import { combineReducers } from 'redux';
 
 const watchItems = (state=[], action) => {
   switch(action.type) {
@@ -19,8 +18,5 @@ const watchItems = (state=[], action) => {
   }
 };
 
-const testApp = combineReducers({
-  watchItems
-});
 
-export default testApp;
+export default watchItems;

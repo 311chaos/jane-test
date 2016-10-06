@@ -7,10 +7,11 @@ const mapStateToProps = (state, ownProps) => {
   }
 };
 
-const mapDispatchToProps = (dispatch, ownProps) => {
+const mapDispatchToProps = (dispatch) => {
   return {
-    onSubmit: (item) => {
-      dispatch(addWatchedItem(item));
+    onSubmit: (input) => {
+      if(input.item)
+        dispatch(addWatchedItem(input.item));
     }
   }
 };

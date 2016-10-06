@@ -10,6 +10,6 @@ export const removeWatchedItem = (text) => {
 export const addWatchedItem = (text) => {
   return {
     type: actionTypes.watchItemAdd,
-    value: text.item
+    value: text
   }
 };

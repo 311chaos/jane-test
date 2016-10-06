@@ -3,7 +3,7 @@ import actionTypes from '../actions/actionTypes';
 export const removeWatchedItem = (text) => {
   return {
     type: actionTypes.watchItemRemove,
-    value: text.item
+    value: text
   }
 };
 

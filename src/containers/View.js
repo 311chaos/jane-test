@@ -8,9 +8,9 @@ const mapStateToProps = (state) => {
   }
 };
 
-const mapDispatchToProps = (dispatch, ownProps) => {
+const mapDispatchToProps = (dispatch) => {
   return {
-    onSubmit: (item) => {
+    deleteItem: (item) => {
       dispatch(removeWatchedItem(item));
     }
   }

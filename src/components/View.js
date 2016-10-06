@@ -3,17 +3,10 @@ import ListItem from './ListItem';
 
 
 class View extends Component {
-  constructor(props) {
-    super(props);
-    this.deleteItem = this.deleteItem.bind(this);
-  }
-  deleteItem(item) {
-    // this.setState({items: removeFromItems(this.props.watchItems, item)});
-  }
   render() {
     const listItems = this.props.watchItems.map(function(item) {
       return (
-        <ListItem key={item.value} item={item.value} deleteItem={this.deleteItem} />
+        <ListItem key={item.value} item={item.value} deleteItem={this.props.deleteItem} />
       )
     }, this);
     return (

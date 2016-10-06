@@ -4,7 +4,6 @@ import logo from './logo.svg';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import { LinkContainer, IndexLinkContainer } from 'react-router-bootstrap';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-import { Link } from 'react-router';
 import Inactive from './containers/Inactive';
 
 class App extends Component {
@@ -42,8 +41,8 @@ class App extends Component {
         <Navbar fixedBottom className="footer">
           <div>
             Aaron Hickman
-            <Link target="_blank" to="https://www.linkedin.com/in/aaronhickman"><span className="icon-linkedin"/></Link>
-            <Link target="_blank" to="https://github.com/311chaos"><span className="icon-github"/></Link>
+            <a target="_blank" href="https://www.linkedin.com/in/aaronhickman"><span className="icon-linkedin"/></a>
+            <a target="_blank" href="https://github.com/311chaos"><span className="icon-github"/></a>
           </div>
         </Navbar>
         <Inactive/>

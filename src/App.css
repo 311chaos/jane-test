@@ -1,3 +1,13 @@
+body {
+  margin: 0;
+  padding: 0 0 70px 0;
+  font-family: sans-serif;
+}
+body {
+  background-color: #f6f6f6 !important;
+}
+
+
 .App {
   text-align: center;
 }
@@ -33,6 +43,19 @@ li.brand a {
   line-height: 60px;
   font-size: 16px;
   font-weight: 200;
+  text-align: center;
+}
+
+.footer {
+  outline: none;
+}
+
+.footer a:hover, .footer a:visited, .footer a:active, .footer a:link {
+  text-decoration: none;
+}
+
+.footer a span:hover {
+  color: #f07558;
 }
 
 .transition-group {

@@ -4,6 +4,7 @@ import logo from './logo.svg';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import { LinkContainer, IndexLinkContainer } from 'react-router-bootstrap';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import { Link } from 'react-router';
 
 class App extends Component {
   render() {
@@ -37,9 +38,11 @@ class App extends Component {
             })}
           </ReactCSSTransitionGroup>
         </div>
-        <Navbar fluid fixedBottom className="footer">
+        <Navbar fixedBottom className="footer">
           <div>
             Aaron Hickman
+            <Link target="_blank" to="https://www.linkedin.com/in/aaronhickman"><span className="icon-linkedin"/></Link>
+            <Link target="_blank" to="https://github.com/311chaos"><span className="icon-github"/></Link>
           </div>
         </Navbar>
       </div>

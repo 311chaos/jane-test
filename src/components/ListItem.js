@@ -15,7 +15,7 @@ class ListItem extends Component {
     const { item } = this.props;
     const imageSrc = `https://dummyimage.com/300x200/fff/7cd8cb.png&text=${item}`;
     return (
-      <div className="col-sm-6 col-md-4">
+      <div className="col-sm-6 col-md-4 noselect">
         <div className="thumbnail">
           <a style={ListItemStyle} tabIndex="-1"  onClick={() => this.props.deleteItem(this.props.item)}>x</a>
           <img src={imageSrc} alt={item}/>

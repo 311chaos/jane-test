@@ -12,7 +12,7 @@ class View extends Component {
     return (
       <div>
         <h3>You are watching {listItems.length} items!</h3>
-        <div className="row">
+        <div className="row list-items">
           {listItems}
         </div>
       </div>

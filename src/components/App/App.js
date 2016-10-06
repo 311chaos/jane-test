@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
-import logo from './logo.svg';
+import logo from '../../logo.svg';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import { LinkContainer, IndexLinkContainer } from 'react-router-bootstrap';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-import Inactive from './containers/Inactive';
+import Inactive from '../../containers/Inactive';
 
 class App extends Component {
   render() {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Router, IndexRedirect, hashHistory } from 'react-router';
 
-import App from '../App';
+import App from '../components/App/App';
 import View from '../containers/View';
 import Edit from '../containers/Edit';
 

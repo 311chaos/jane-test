@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 import { addWatchedItem } from '../actions'
 import EditComp  from '../components/Edit';
+
 const mapStateToProps = (state, ownProps) => {
   return {
     item: ownProps.item

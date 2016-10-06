@@ -105,3 +105,19 @@ li.brand a {
   user-select: none;           /* Non-prefixed version, currently
                                   not supported by any browser */
 }
+
+.idle {
+  position: absolute;
+  border: 1px solid #737373;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(115,115,115, 0.95);
+  font-size: 16px;
+  font-weight: 200;
+}

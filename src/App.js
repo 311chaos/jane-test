@@ -5,6 +5,7 @@ import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import { LinkContainer, IndexLinkContainer } from 'react-router-bootstrap';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import { Link } from 'react-router';
+import Inactive from './containers/Inactive';
 
 class App extends Component {
   render() {
@@ -45,6 +46,7 @@ class App extends Component {
             <Link target="_blank" to="https://github.com/311chaos"><span className="icon-github"/></Link>
           </div>
         </Navbar>
+        <Inactive/>
       </div>
     );
   }
